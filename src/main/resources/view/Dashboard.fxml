@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onDragDetected="#btnStudentOnAction" prefHeight="917.0" prefWidth="1489.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.elite_driving_schoolorm.controllers.DashboardController">
+   <children>
+      <VBox prefHeight="893.0" prefWidth="300.0" spacing="25.0" style="-fx-background-color: #7A7A73; -fx-border-radius: 20px; -fx-background-radius: 20px;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/pictures/driving-license.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnUserOnAction" prefHeight="52.0" prefWidth="206.0" style="-fx-background-color: #57564F; -fx-background-radius: 20;" text="User" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnStudentOnAction" prefHeight="52.0" prefWidth="206.0" style="-fx-background-color: #57564F; -fx-background-radius: 20;" text="Student" textFill="#f5f3f3">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnInstructorOnAction" prefHeight="52.0" prefWidth="206.0" style="-fx-background-color: #57564F; -fx-background-radius: 20;" text="Instructor" textFill="#f8f5f5">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnCourseOnAction" prefHeight="52.0" prefWidth="206.0" style="-fx-background-color: #57564F; -fx-background-radius: 20;" text="Course" textFill="#f5f4f4">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="60.0" layoutY="566.0" mnemonicParsing="false" onAction="#btnCourseOnAction" prefHeight="52.0" prefWidth="206.0" style="-fx-background-color: #57564F; -fx-background-radius: 20;" text="Payment" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="643.0" mnemonicParsing="false" onAction="#Lesson" prefHeight="52.0" prefWidth="206.0" style="-fx-background-color: #57564F; -fx-background-radius: 20;" text="Lesson" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="316.0" prefHeight="800.0" prefWidth="884.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="ancDashboard" layoutX="14.0" layoutY="111.0" prefHeight="792.0" prefWidth="1152.0" style="-fx-background-color: #7A7A73; -fx-background-radius: 20px;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="111.0" />
+            <Label layoutX="297.0" layoutY="14.0" prefHeight="79.0" prefWidth="467.0" text="Elite Driving School">
+               <font>
+                  <Font name="System Bold" size="49.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="130.0" layoutX="197.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/driving-school.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="59.0" fitWidth="63.0" layoutX="141.0" layoutY="827.0" onMouseClicked="#logOut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pictures/logout.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

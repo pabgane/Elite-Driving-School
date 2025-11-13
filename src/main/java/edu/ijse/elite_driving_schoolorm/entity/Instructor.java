@@ -1,0 +1,53 @@
+package edu.ijse.elite_driving_schoolorm.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+
+@Entity
+@Table(name = "instructor")
+public class Instructor {
+
+    @Id
+    @Column
+    private String instructorId;
+
+    @Column(nullable = false)
+    private String first_name;
+
+    @Column(nullable = false)
+    private String last_name;
+
+    @Column(unique = true,nullable = false)
+    private String email;
+
+    @Column(nullable = false,unique = true,length = 15)
+    private String phone;
+
+    @Column(nullable = false)
+    private String specialization;
+
+    @Column(nullable = false)
+    private String availability;
+
+    @OneToMany(
+            mappedBy = "instructor",
+            cascade = CascadeType.ALL
+    )
+    private List<Lessons> lessons;
+
+    @OneToMany(
+            mappedBy = "instructor",
+            cascade = CascadeType.ALL
+    )
+    private List<Course> courses;
+}

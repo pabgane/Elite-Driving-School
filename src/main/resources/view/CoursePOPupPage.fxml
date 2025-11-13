@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="613.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.elite_driving_schoolorm.controllers.CoursePOPupPageController">
+    <children>
+        <VBox layoutX="76.0" layoutY="58.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #57564F; -fx-background-radius: 8px;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <HBox prefHeight="60.0" prefWidth="379.0">
+                    <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20px; -fx-border-radius: 5px; -fx-background-color: #7A7A73;" HBox.hgrow="ALWAYS">
+                            <center>
+                                <Label fx:id="lblCourseId" prefHeight="44.0" prefWidth="131.0" text="  0001" textFill="#fcf5f5" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="35.0" />
+                                    </font>
+                                </Label>
+                            </center>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </BorderPane>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="593.0">
+                    <children>
+                  <Label prefHeight="30.0" prefWidth="102.0" text="Course Name" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                        <TextField fx:id="txtCourseName" alignment="CENTER" focusTraversable="false" prefHeight="42.0" prefWidth="250.0" promptText="CS" style="-fx-background-color: transparent;">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="20.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="29.0" prefWidth="379.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="120.0" text="Duration" textFill="#f8f6f6">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                        </Label>
+                        <TextField fx:id="txtDuration" alignment="CENTER" prefHeight="30.0" prefWidth="250.0" promptText="03 months" style="-fx-background-color: transparent;">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="20.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="29.0" prefWidth="379.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="128.0" text="Course Fee" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                        </Label>
+                        <TextField fx:id="txtCourseFee" alignment="CENTER" prefHeight="30.0" prefWidth="250.0" promptText="6000.00" style="-fx-background-color: transparent;">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="20.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="29.0" prefWidth="379.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="130.0" text="Description" textFill="#fcf9f9">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                        </Label>
+                        <TextField fx:id="txtDescription" alignment="CENTER" prefHeight="30.0" prefWidth="250.0" promptText="********" style="-fx-background-color: transparent;">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="20.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="29.0" prefWidth="379.0">
+                    <children>
+                        <Label prefHeight="29.0" prefWidth="150.0" text="Instructor Id" textFill="#fffdfd">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                        </Label>
+                  <ComboBox fx:id="cmbInstructorId" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #fff; -fx-border-color: #2a9d8f;">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="34.0" prefWidth="308.0">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="50.0" />
+                    </VBox.margin>
+                    <children>
+                        <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSaveOncAction" prefHeight="34.0" prefWidth="180.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Save" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="34.0" prefWidth="308.0">
+                    <children>
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="34.0" prefWidth="180.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+package edu.ijse.elite_driving_schoolorm.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.sql.Time;
+import java.util.Date;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+
+public class LessonsDTO {
+    private String lessonId;
+    private String studentId;
+    private String courseId;
+    private String instructorId;
+    private Date lessonDate;
+    private String startTime;
+    private String endTime;
+    private String status;
+}
